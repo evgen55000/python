@@ -22,23 +22,21 @@ print(c)
 # 1) Напишите счетчик с помощью конструкции while, который выводит числа от 0 до 10.
 
 
-a = 10
-b = 0
-while True:
-    b = b +1
+
+b = -1
+while b < 10 :
+    b = b + 1
     print(b)
-    if b == a:
-        break
+
 
 # 2) Напишите счетчик с помощью конструкции while, который выводит числа от 20 до 1.
 
 a = 1
 b = 21
-while True:
+while b > a:
         b = b - 1
         print(b)
-        if b == a:
-            break
+
 
 
 
@@ -47,16 +45,16 @@ while True:
 # Введите код «разговорника» с последнего слайда. Поэкспериментируйте с ним.
 
 while True:
-print("Type 'quit' end 'exit' to exit")
+    print("Type 'quit' end 'exit' to exit")
     phrase = input("Your message: ")
     if phrase == "quit" or phrase == "exit":
         break
     elif phrase == "Hello" or phrase == "Hi":
-    print("Hi! How‘s it going?")
+        print("Hi! How‘s it going?")
     elif phrase == "What is your name?":
-    print("I don't have name :(")
+        print("I don't have name :(")
     else:
-    print("I don't understand you")
+        print("I don't understand you")
 
 # Extra задание:
 
