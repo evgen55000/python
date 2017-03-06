@@ -5,9 +5,9 @@
 # его номер кратен 4, но не кратен 100, а также если он кратен 400.)
 
 def is_year_leap(a):
-    if ((a/4 == a//4) and (a//100 != a/100)) or (a//400 == a/400): return True #не високосный
-    else: return  False #високосный
-#print(is_year_leap(2200))
+    if ((a/4 == a//4) and (a//100 != a/100)) or (a//400 == a/400): return True #високосный
+    else: return  False #не високосный
+#print(is_year_leap(2017))
 
 # Задание 6
 # Написать функцию is_date, принимающую 3 аргумента — день, месяц и год.
@@ -27,9 +27,9 @@ def is_date(year,month,day):
                 else: m = 28
             else:
                 if month/2 == month//2:
-                    m = 31
-                else:
                     m = 30
+                else:
+                    m = 31
             if 1 <= day <= m:
                 #print('good')
                 s = True
@@ -39,4 +39,4 @@ def is_date(year,month,day):
  #       else:
     return s
 
-print(is_date(2020,11,30))
+print(is_date(2019,3,31))
